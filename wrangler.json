@@ -10,11 +10,11 @@
   },
   "routes": [
     {
-      "pattern": "izzinity.com/*",
+      "pattern": "izzinity.com",
       "custom_domain": true
     },
     {
-      "pattern": "www.izzinity.com/*",
+      "pattern": "www.izzinity.com",
       "custom_domain": true
     }
   ]
