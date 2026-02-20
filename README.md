@@ -8,6 +8,7 @@ Website ini dibina menggunakan **pure HTML, CSS, dan Vanilla JS** (tiada backend
 - `photography.html`
 - `photobooth.html`
 - `design-sublimation.html`
+- `engineering-services.html`
 - `portfolio.html`
 - `contact.html`
 - `styles.css`

@@ -44,6 +44,8 @@
             <li><a href="photography.html">Fotografi</a></li>
             <li><a href="photobooth.html">Photobooth</a></li>
             <li><a href="design-sublimation.html">Design &amp; Sublimation</a></li>
+            <li><a href="engineering-services.html">Engineering</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html#lokasi">Lokasi</a></li>
             <li><a href="contact.html#hubungi">Hubungi</a></li>
           </ul>
@@ -94,7 +96,7 @@
             <div class="hero-content" data-reveal>
               <div>
                 <span class="kicker">Ditubuhkan 2025 • Sandakan, Sabah</span>
-                <h1>IZZINITY Studio</h1>
+                <h1>IZZINITY GROUP</h1>
                 <p>Photography • Photobooth • Design Baju • Print Sublimation</p>
               </div>
 
@@ -109,23 +111,74 @@
                 <a class="btn btn-ghost" href="photography.html">Lihat Pakej</a>
               </div>
 
-              <div class="quick-actions" aria-label="Quick buttons">
-                <a class="btn btn-chip" href="photography.html">Photography</a>
-                <a class="btn btn-chip" href="photobooth.html">Booth</a>
-                <a class="btn btn-chip" href="design-sublimation.html">Sublimation</a>
-                <a
-                  class="btn btn-chip"
-                  href="https://api.whatsapp.com/send?phone=601155515775&text=Hi%20IZZINITY,%20saya%20nak%20tanya%20pakej%20dan%20booking"
-                  target="_blank"
-                  rel="noopener"
-                  >WhatsApp</a
-                >
+              <div class="quick-actions" aria-label="Quick service tabs">
+                <button class="btn btn-chip is-active" type="button" data-quick-tab="photography">
+                  Photography
+                </button>
+                <button class="btn btn-chip" type="button" data-quick-tab="booth">Booth</button>
+                <button class="btn btn-chip" type="button" data-quick-tab="sublimation">Sublimation</button>
+                <button class="btn btn-chip" type="button" data-quick-tab="engineering">Engineering</button>
+              </div>
+
+              <div class="quick-detail" data-quick-detail>
+                <div class="quick-detail-group is-active" data-quick-content="photography">
+                  <ul class="quick-detail-list">
+                    <li>Photobooth</li>
+                    <li>Portrait</li>
+                    <li>Event</li>
+                    <li>Corporate</li>
+                    <li>Sports</li>
+                    <li>Profile</li>
+                    <li>Food Photography</li>
+                  </ul>
+                </div>
+
+                <div class="quick-detail-group" data-quick-content="booth">
+                  <ul class="quick-detail-list">
+                    <li>Up to 4 jam sesi</li>
+                    <li>Unlimited photo printed</li>
+                    <li>Multiple backdrop selection</li>
+                    <li>Customize photo layout</li>
+                    <li>Free delivery &amp; setup within Sandakan</li>
+                  </ul>
+                </div>
+
+                <div class="quick-detail-group" data-quick-content="sublimation">
+                  <ul class="quick-detail-list">
+                    <li>Graphic Design</li>
+                    <li>Sublimation</li>
+                    <li>Silkscreen</li>
+                    <li>Heatpress</li>
+                    <li>Photo Print</li>
+                  </ul>
+                </div>
+
+                <div class="quick-detail-group" data-quick-content="engineering">
+                  <ul class="quick-detail-list code-list">
+                    <li>010901 - Penyelenggaraan/Pembaikan Kenderaan</li>
+                    <li>010905 - Penyelenggaraan/Pembaikan Perkakas Elektrik/Elektronik/Alat Hawa Dingin</li>
+                    <li>010906 - Penyelenggaraan/Pembaikan Mesin/Kelengkapan Pejabat</li>
+                    <li>010913 - Penyelenggaraan/Pembaikan Mesin/Peralatan Workshop</li>
+                    <li>010916 - Penyelenggaraan/Pembaikan Sistem Mekanisasi (Conveyor Lift)</li>
+                    <li>010923 - Penyelenggaraan/Pembaikan Kerja-Kerja Khusus Baik Pulih Enjin</li>
+                    <li>010925 - Baik Pulih Tayar/Bateri/Barang Logam</li>
+                    <li>010926 - Kerja-Kerja Mengetuk/Mengecat</li>
+                    <li>010936 - Penyelenggaraan/Pembaikan Elektrikal Kenderaan</li>
+                    <li>050110 - Pembekal Lampu/Perkakas/Kelengkapan Elektrik/Elektronik/Projektor</li>
+                    <li>051101 - Pembekal Mesin/Kelengkapan Bengkel</li>
+                    <li>051102 - Pembekal Peralatan Perindustrian Minyak</li>
+                    <li>051103 - Pembekal Mesin/Kelengkapan Khusus</li>
+                    <li>051104 - Pembekal Alat Ganti/Perkakas Kejuruteraan</li>
+                    <li>051105 - Pembekal Alat/Perkakasan Logam</li>
+                  </ul>
+                </div>
               </div>
 
               <div class="trust-chips" aria-label="Kelebihan servis">
                 <span class="trust-chip">Photography &amp; Portrait</span>
                 <span class="trust-chip">Photobooth Unlimited Print</span>
                 <span class="trust-chip">Design Baju &amp; Sublimation</span>
+                <span class="trust-chip">Engineering Services</span>
               </div>
             </div>
           </div>
@@ -138,7 +191,8 @@
             <span class="kicker">Servis Utama</span>
             <h2>Pakej fleksibel untuk event, bisnes dan personal.</h2>
           </div>
-          <div class="grid-4" data-reveal>
+
+          <div class="services-grid" data-reveal>
             <article class="service-card">
               <img
                 class="service-media"
@@ -156,8 +210,8 @@
             </article>
             <article class="service-card">
               <img
-                class="service-media"
-                src="/assets/homepage/family-photobook-about-easter-easter-card-with-love_493343-29937.avif"
+                class="service-media service-media--booth"
+                src="/assets/homepage/6bf92ca2-9021-447a-86c9-7531159e43a4.jpeg"
                 alt="Servis photobooth untuk event dan keluarga"
                 loading="lazy"
               />
@@ -196,6 +250,21 @@
                 <p class="muted">Print kemas ikut saiz dan kuantiti untuk team atau event.</p>
                 <div class="card-actions">
                   <a class="btn btn-ghost" href="design-sublimation.html">Minta Harga</a>
+                </div>
+              </div>
+            </article>
+            <article class="service-card">
+              <img
+                class="service-media"
+                src="/assets/homepage/shutterstock_2293858001.webp"
+                alt="Servis kejuruteraan teknikal IZZINITY"
+                loading="lazy"
+              />
+              <div class="service-body">
+                <h3>Engineering Services</h3>
+                <p class="muted">Servis maintenance, repair dan supply untuk keperluan teknikal.</p>
+                <div class="card-actions">
+                  <a class="btn btn-ghost" href="engineering-services.html">Lihat Servis</a>
                 </div>
               </div>
             </article>
@@ -271,7 +340,7 @@
             loading="lazy"
           />
           <div>
-            <strong>IZZINITY Studio</strong>
+            <strong>IZZINITY GROUP</strong>
             <p class="muted">Photography • Photobooth • Design Baju • Print Sublimation</p>
           </div>
         </div>
@@ -287,6 +356,7 @@
               >011-55515775</a
             >
           </li>
+          <li><strong>No. Tel Ofis:</strong> <a href="tel:+6089831861">089-831861</a></li>
             <li><strong>Email:</strong> <a href="mailto:izzinityc@gmail.com">izzinityc@gmail.com</a></li>
             <li>
             <strong>Alamat:</strong> LOT 67 BLOK C3 TINGKAT 1 UTAMA PLACE 6&amp;7 BATU 6 JALAN UTARA

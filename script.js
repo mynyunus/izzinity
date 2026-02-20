@@ -109,6 +109,27 @@
     });
   }
 
+  var quickTabs = document.querySelectorAll("[data-quick-tab]");
+  var quickGroups = document.querySelectorAll("[data-quick-content]");
+
+  if (quickTabs.length > 0 && quickGroups.length > 0) {
+    quickTabs.forEach(function (tab) {
+      tab.addEventListener("click", function () {
+        var key = tab.getAttribute("data-quick-tab");
+
+        quickTabs.forEach(function (item) {
+          item.classList.remove("is-active");
+        });
+        tab.classList.add("is-active");
+
+        quickGroups.forEach(function (group) {
+          var isMatch = group.getAttribute("data-quick-content") === key;
+          group.classList.toggle("is-active", isMatch);
+        });
+      });
+    });
+  }
+
   var carousels = document.querySelectorAll("[data-carousel]");
   if (carousels.length > 0) {
     carousels.forEach(function (carousel) {
